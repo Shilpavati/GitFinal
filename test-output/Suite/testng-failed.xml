@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Academy.VerifyFormAuthenticationPage"/>
+      <class name="Academy.VerifyJavaScriptAlerts"/>
+      <class name="Academy.VerifyFormAuthenticationPageWithExcel"/>
+      <class name="Academy.VerifyCheckbox"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="Academy.VerifyJavaScriptAlerts">
+        <methods>
+          <include name="validateJavaScriptAlerts"/>
+          <include name="teardown"/>
+          <include name="Initialize"/>
+        </methods>
+      </class> <!-- Academy.VerifyJavaScriptAlerts -->
+      <class name="Academy.VerifyCheckbox">
+        <methods>
+          <include name="Initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.VerifyCheckbox -->
+      <class name="Academy.VerifyFormAuthenticationPage">
+        <methods>
+          <include name="validateFormAuthentication" invocation-numbers="2"/>
+          <include name="Initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.VerifyFormAuthenticationPage -->
+      <class name="Academy.VerifyFormAuthenticationPageWithExcel">
+        <methods>
+          <include name="Initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.VerifyFormAuthenticationPageWithExcel -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

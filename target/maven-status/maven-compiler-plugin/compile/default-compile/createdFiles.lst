@@ -1,0 +1,8 @@
+pageObjects\LandingPage.class
+pageObjects\SecurePage.class
+pageObjects\CheckboxesPage.class
+resources\base.class
+pageObjects\JavaScriptAlerts.class
+pageObjects\FormAuthenticationPage.class
+Academy\App.class
+resources\ExtentReporterNG.class
