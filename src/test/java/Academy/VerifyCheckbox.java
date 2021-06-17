@@ -22,7 +22,9 @@ public class VerifyCheckbox extends base {
 	@BeforeTest
 	public void Initialize() throws IOException {
 		driver = InitializeDriver();
-
+		System.out.println("Line 1 added");
+		System.out.println("Line 2 added");
+		System.out.println("Line 3 added");
 	}
 
 	@Test
