@@ -25,6 +25,7 @@ public class VerifyJavaScriptAlerts extends base {
 	@BeforeTest
 	public void Initialize() throws IOException {
 		driver = InitializeDriver();
+		System.out.println("New line added");
 	}
 
 	@Test
