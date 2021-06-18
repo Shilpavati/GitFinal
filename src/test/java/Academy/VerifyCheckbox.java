@@ -33,6 +33,11 @@ public class VerifyCheckbox extends base {
 		System.out.println("Lets add some new code");
 
 	}
+	@Test
+	public void newArchitect1() {
+		System.out.println("Lets add some new code");
+
+	}
 
 	@Test
 	public void validatecheckbox() {
