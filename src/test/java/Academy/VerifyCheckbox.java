@@ -18,20 +18,27 @@ import pageObjects.LandingPage;
 public class VerifyCheckbox extends base {
 	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(base.class.getName());
-	
+
 	@BeforeTest
 	public void Initialize() throws IOException {
 		driver = InitializeDriver();
 		System.out.println("Line 1 added");
 		System.out.println("Line 2 added");
 		System.out.println("Line 3 added");
+		System.out.println("I am the new architect");
+	}
+
+	@Test
+	public void newArchitect() {
+		System.out.println("Lets add some new code");
+
 	}
 
 	@Test
 	public void validatecheckbox() {
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
-		
+
 		LandingPage l = new LandingPage(driver);
 
 		l.getCheckBoxes().click();
